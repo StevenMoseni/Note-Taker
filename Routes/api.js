@@ -1,12 +1,26 @@
 const fs = require('fs');
+const { notEqual } = require('node:assert');
 
 module.exports = function(app) {
 
-app.get('/api/notes', function(req, res) {
-    fs.readFile('./db/db.json', (err, data) => {
+    app.get('/api/notes', function(req, res) {
+      fs.readFile('./db/db.json', (err, data) => {
         if (err) throw err;
         dbData = JSON.parse(data);
         res.send(dbData);
-    });
-})
+       });
+    })
+
+    app.post('/api/notes', function(rew, res) {
+        const userNotes = req.body;
+
+        fs.readFile('./db/db.json', (err, data) => {
+            if (err) throw err;
+            dbData = JSON.parse(data);
+            dbData.push(userNotes);
+            let number = 1;
+            dbData.forEach((note, index))
+        })
+    }
 }
+
