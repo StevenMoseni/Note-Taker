@@ -19,7 +19,20 @@ module.exports = function(app) {
             dbData = JSON.parse(data);
             dbData.push(userNotes);
             let number = 1;
-            dbData.forEach((note, index))
+            dbData.forEach((note, index) => {
+                note.id = number;
+                number++;
+                return dbData;
+            });
+            console.log(dbData);
+
+            stringData = JSON.stringify(dbData);
+
+            fs.writeFile('./db/db/.json', stringData, (err, data) => {
+                if (err) throw err;
+                
+            }
+            )
         })
     }
 }
