@@ -38,7 +38,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete.
 3. [License](#Licence)
 4. [Contribution](#Contribution)
 5. [Questions](#Questions)
-6. [StartBy](#StartBy)
+6. [Technologies Used](#Technologies_Used)
 
 
 ## Installation
@@ -70,10 +70,20 @@ Please email me regarding any changes.
 ```
 
 # Questions
- <a href="https://github.com/stevenmoseni>Github Url : https://github.com/stevenmoseni</a>
+ <a href="https://github.com/StevenMoseni">Github Url : https://github.com/StevenMoseni</a>
 
- <a href=“stevenamoseni@gmail.com">Email : stevenamoseni@gmail.com</a>
+ <a href="StevenAMoseni@gmail.com">Email : StevenAMoseni@gmail.com</a>
 
- ## StartBy
+ ## Technologies_Used
+* JavasScript
+* Node.js
+* Express.js
+* mySQL
+* npm modules
+* heroku
 
-First, make sure you have installed all the dependencies, then run the file by simply typing node server.js in console and typing localhost:3000 on browser.
+## Links 
+Deployed app: https://limitless-ridge-44234.herokuapp.com/  <br/> 
+Github Page: https://github.com/StevenMoseni/Note-Taker
+ <br/> 
+Github Published link: https://stevenmoseni.github.io/Note-Taker/
